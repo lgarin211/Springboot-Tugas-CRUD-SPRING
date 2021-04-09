@@ -1,0 +1,23 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+</head>
+<body>
+
+<div th:each="Sam : ${ard}">
+    <h1 th:text="${Sam.NISN}"></h1><br>
+    <h1 th:text="${Sam.NIP}"></h1><br>
+    <h1 th:text="${Sam.Nama}"></h1><br>
+    <h1 th:text="${Sam.Jurusan}"></h1><br>
+    <h1 th:text="${Sam.Kelas}"></h1><br>
+    <h1 th:text="${Sam.Alamat}"></h1><br>
+    <h1 th:text="${Sam.Other_Info}"></h1><br>
+
+
+    <hr>
+</div>
+</body>
+</html>
